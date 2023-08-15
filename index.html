@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8"> <!-- esta parte lo que hace es permitir los tildes y la ñ-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- acá se ve el tipo de vista, para que sea compatible en celulares o tablets -->
-    <!-- link rel="stylesheet" type="text/css" href="estilo.css" -->
+    <link rel="stylesheet" type="text/css" href="estilo.css">
     <title>Página de prueba y aprendizaje</title>
 </head>
 <body>
+    <header>
+        <img width="10%" src="imagenes/logo.png" alt="">
+    </header>
+    <nav>
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://www.twitter.com">Twitter</a>
+    </nav>
+    <br><br>
+    <section>
+        <p>La tecnología ha transformado radicalmente nuestra vida diaria. Desde la comunicación hasta la forma en que trabajamos y nos entretenemos, la influencia de la tecnología es innegable. Los dispositivos móviles y las redes sociales nos mantienen conectados en todo momento, mientras que la inteligencia artificial simplifica tareas complejas. En el mundo laboral, el trabajo remoto se ha vuelto común gracias a plataformas colaborativas en línea. Además, la medicina ha avanzado con diagnósticos más precisos y tratamientos innovadores. A pesar de los beneficios, surge el debate sobre la privacidad y el equilibrio entre el mundo digital y el mundo real. En última instancia, la tecnología continúa moldeando nuestra sociedad de maneras profundas y emocionantes.</p>
+    </section>
+
     <h1>
         Esta es la visualización de h1, como tamaño de texto.
     </h1>
     <h2>
         Esto es h2.
     </h2>
+
     <h3>
         Esto es h3, y asi hasta el h6, no hay h7 o superiores.
     </h3>
@@ -51,8 +65,74 @@
     </ol>
     <a href="https://www.google.com" target="_blank">ENLACE A GOOGLE</a>
     <!--_blank abre en pestaña nueva, y _self abre en la misma, si no se indica, es _self-->
-
+    <br>
     <!--IMAGENES-->
-    
+    <center><img src="imagenes/atrapado.jpg" alt="Chuck Norris diciendo que nacio"></center>
+    <br><br>
+    <!--TABLAS-->
+    <table border="2" align="center">
+        <caption>Tabla número 1</caption>
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+        </tr>
+            <td rowspan="2">Celda 1 y 4</td>
+            <td colspan="2" align="center">Celda 2 y 3</td>
+        </tr>
+        <tr>
+            <td>Celda 5</td>
+            <td rowspan="2">Celda 6 y 9</td>
+        </tr>
+        <tr>
+            <td>Celda 7</td>
+            <td>Celda 8</td>
+        </tr>
+    </table>
+    <br>
+    <!--FORMULARIOS-->
+    <form align="center">
+        <fieldset>
+            <legend>Formulario de prueba</legend>
+            <label>Usuario:</label>
+            <input type="text" required><br><br>
+            <input type="email" required placeholder="email"><br><br>
+            <input type="password" placeholder="Contraseña"><br><br>
+            Edad: <input type="number" min="1" max="125"><br><br>
+            <button>Enviar</button>
+        </fieldset>
+        Usuario <input type="text"><br><br>
+        Contraseña <input type="password"><br><br>
+        Correo <input type="email"><br><br>
+        <input type="date"><br><br>
+        <input type="month"><br><br>
+        <input type="week"><br><br>
+        <input type="color"><br><br>
+        Sexo
+        <input type="radio" name="genero" value="M">M
+        <input type="radio" name="genero" value="F">F<br><br>
+        <input type="reset" value="Borrar datos"><br><br>
+        <select name="" id="">
+            <option value="">Opción 1</option>
+            <option value="">Opción 2</option>
+            <option value="">Opción 3</option>
+        </select><br><br>
+        <select name="" id="">
+            <optgroup label="Tipo">
+                <option value="">Tipo 1</option>
+                <option value="">Tipo 2</option>
+                <option value="">Tipo 3</option>
+            </optgroup>
+        </select><br><br>
+        <input list="Etiquetas">
+        <datalist id="Etiquetas">
+            <option value="Texto"></option>
+            <option value="Tablas"></option>
+        </datalist><br><br>
+        <input type="file"><br><br>
+        <progress value="25" max="100"></progress>
+    </form>
+    <br><br>
 </body>
+<footer>Escrito por Henzo Alejandro Arrué Muñoz</footer>
 </html>
